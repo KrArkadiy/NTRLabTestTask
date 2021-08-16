@@ -47,7 +47,9 @@ public class JsoupSolve {
                 finalMap.put(s, resultMap.get(s));
             }
         }
-        finalMap.entrySet().stream().sorted(Map.Entry.comparingByValue(Comparator.reverseOrder())).forEach(System.out::println);
+        finalMap.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .forEach(System.out::println);
     }
 
     public String[] requiredWordsList(String fileName) {
